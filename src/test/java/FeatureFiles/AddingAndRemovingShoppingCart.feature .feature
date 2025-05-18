@@ -23,5 +23,16 @@ Feature: Magento
     And Enter email address and click Reset My Password button
     Then The user should see a password reset confirmation message
 
+  Scenario: Adding and removing products to cart
+    Given The user goes to the product selection page
+    When User adds the product to the cart
+    Then Fills in the required information for the product
+
+    Given User goes to the cart page
+    When User deletes the product
+    Then The user receives a confirmation message that the product is not available
+
+
+
 
 
