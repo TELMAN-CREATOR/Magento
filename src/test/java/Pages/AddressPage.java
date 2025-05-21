@@ -3,8 +3,7 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
-
-import static org.junit.Assert.assertTrue;
+import org.testng.Assert;
 
 public class AddressPage {
     WebDriver driver;
@@ -39,7 +38,7 @@ public class AddressPage {
     }
 
     public void verifySuccessMessage() {
-        assertTrue(driver.getPageSource().contains("You saved the address."));
+        Assert.assertTrue(driver.getPageSource().contains("You saved the address."));
     }
 }
 
