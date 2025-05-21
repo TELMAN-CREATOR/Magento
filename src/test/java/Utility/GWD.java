@@ -2,13 +2,14 @@ package Utility;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.Locale;
 
 public class GWD {
-    public static WebDriver driver;
 
+    public static WebDriver driver;
     public static WebDriver getDriver() {
         Locale.setDefault(new Locale("EN"));
         System.setProperty("user.language", "EN");
