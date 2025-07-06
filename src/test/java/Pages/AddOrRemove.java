@@ -40,19 +40,4 @@ public class AddOrRemove {
 
     @FindBy(css = "[class='subtitle empty']")
     public WebElement message;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

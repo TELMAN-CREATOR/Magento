@@ -7,9 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.interactions.Actions;
 
-
 public class TABMenuControl {
-
     TabMenu tabMenu = new TabMenu();
 
     @Given("Navigate to Magento and Login Page")

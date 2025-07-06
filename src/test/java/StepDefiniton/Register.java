@@ -20,8 +20,8 @@ RegisterPage registerPage=new RegisterPage();
     }
     @When("Enter the all information")
     public void enter_the_all_information() {
-       registerPage.mySendKeys(registerPage.firstName, "Adminka");
-       registerPage.mySendKeys(registerPage.lastName, "Adminoviçka");
+       registerPage.mySendKeys(registerPage.firstName, "Admin");
+       registerPage.mySendKeys(registerPage.lastName, "Adminoviç");
        registerPage.mySendKeys(registerPage.email_address, "admin1212@gmail.com");
        registerPage.mySendKeys(registerPage.password, "Admin1212.");
        registerPage.mySendKeys(registerPage.passwordConfirmation, "Admin1212.");
@@ -32,5 +32,4 @@ RegisterPage registerPage=new RegisterPage();
         System.out.println(registerPage.success.getText());
         Assert.assertTrue(registerPage.success.getText().contains("Thank you"));
     }
-
 }

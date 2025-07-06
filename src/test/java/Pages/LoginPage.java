@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
 public class LoginPage {
     WebDriver driver;
 
@@ -54,4 +53,3 @@ public class LoginPage {
     @FindBy(css = "[class='page messages']")
     public WebElement resetSuccessMessage;
 }
-

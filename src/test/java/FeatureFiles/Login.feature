@@ -22,6 +22,3 @@ Feature: Magento
     When Click the Forgot Your Password link
     And Enter email address and click Reset My Password button
     Then The user should see a password reset confirmation message
-
-
-

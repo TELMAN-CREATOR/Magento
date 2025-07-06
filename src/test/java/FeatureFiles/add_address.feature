@@ -6,4 +6,3 @@ Feature: Adres ekleme
     And Manage Address bağlantısına tıklar
     And Yeni adres ekler: "<ad>", "<soyad>", "<adres>", "<şehir>", "<postaKodu>", "<ülke>", "<telefon>"
     Then Adres başarıyla eklenmiş olmalıdır
-

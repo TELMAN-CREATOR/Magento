@@ -31,8 +31,3 @@ Feature: Magento
     Given User goes to the cart page
     When User deletes the product
     Then The user receives a confirmation message that the product is not available
-
-
-
-
-

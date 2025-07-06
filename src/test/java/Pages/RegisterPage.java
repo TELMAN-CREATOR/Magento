@@ -33,5 +33,4 @@ public class RegisterPage extends ParentPage {
 
     @FindBy(xpath = "//div[text()='Thank you for registering with Main Website Store.']")
     public WebElement success;
-
 }

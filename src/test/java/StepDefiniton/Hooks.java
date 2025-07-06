@@ -6,10 +6,9 @@ import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
-
 public class Hooks {
 
-    @After// Cucumber ın Annotation ı
+    @After // Cucumber ın Annotation ı
            // her senaryodan sonra otomatik çalışır
     public void after(Scenario senaryo)
     {
@@ -18,9 +17,6 @@ public class Hooks {
             byte[] hafizadakiHali=ts.getScreenshotAs(OutputType.BYTES);
             senaryo.attach(hafizadakiHali, "image/png", "screenshot name");
         }
-
         GWD.quitDriver();
     }
-
-
 }
